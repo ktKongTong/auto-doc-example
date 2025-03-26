@@ -108,7 +108,7 @@ jobs:
           fi
       - name: get content
         if: ${{ steps.check-branch-exists.outputs.exists == 'false' || env.exec-even-exist == 'true' }}
-        uses: ktKongTong/autodoc-action@v0.1.0
+        uses: ktKongTong/autodoc-action@0.1.1
         with:
           token: ${{ secrets.GEMINI_TOKEN }}
           github-token: ${{ secrets.PAT }}
